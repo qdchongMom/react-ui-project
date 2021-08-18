@@ -1,0 +1,18 @@
+.paper {
+  width: 300px;
+  height: 220px;
+  margin: auto;
+  margin-top: 20px;
+  background-image: linear-gradient(steelblue, skyblue);
+  text-align: center;
+  color: white !important;
+  text-shadow: 2px 2px 8px black;
+}
+.element {
+  display: flex;
+  justify-content: center;
+}
+.fontcss {
+  font-family: sans-serif;
+  font-size: 20px;
+}
