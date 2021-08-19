@@ -1,5 +1,5 @@
 .paper {
-  width: 300px;
+  width: 400px;
   height: 220px;
   margin: auto;
   margin-top: 20px;
@@ -15,4 +15,8 @@
 .fontcss {
   font-family: sans-serif;
   font-size: 20px;
+}
+
+.loader {
+  margin: auto;
 }

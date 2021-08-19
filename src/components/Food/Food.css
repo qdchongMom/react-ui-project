@@ -1,0 +1,13 @@
+.food__table {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.food__filter {
+  margin-top: 20px;
+}
+
+.food__label {
+  color: white;
+  font-size: large;
+}

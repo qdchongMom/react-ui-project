@@ -10,8 +10,24 @@ const DisplayWeather = ({ data }) => {
     switch (forecast) {
       case "Thundery Showers":
         return "RAIN";
-      case "Light Rain":
+      case "Light Showers":
+        return "SLEET";
+      case "Showers":
         return "RAIN";
+      case "Light Rain":
+        return "SLEET";
+      case "Moderate Rain":
+        return "RAIN";
+      case "Cloudy":
+        return "CLOUDY";
+      case "Partly Cloudy (Day)":
+        return "CLOUDY";
+      case "Windy":
+        return "WIND";
+      case "Fair":
+        return "CLEAR_DAY";
+      case "Sunny":
+        return "CLEAR_DAY";
       default:
         return "CLEAR_DAY";
     }
