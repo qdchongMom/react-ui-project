@@ -5,9 +5,16 @@
 
 .food__filter {
   margin-top: 20px;
+  margin-right: 40px;
 }
 
 .food__label {
-  color: white;
   font-size: large;
+}
+
+.alice-carousel img {
+  margin-top: 40px;
+  height: 200px;
+  width: 30%;
+  object-fit: cover;
 }

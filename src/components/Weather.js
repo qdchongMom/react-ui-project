@@ -1,16 +1,18 @@
 import React from "react";
-import useSWR from "swr";
+import useSWR, { mutate } from "swr";
 import moment from "moment";
 import DisplayWeather from "./DisplayWeather";
 import CirularLoader from "../components/CircularLoader";
 import "./DisplayWeather.css";
 import Food from "./Food/Food";
+import { WEATHERURL } from "../constants/index";
+import Button from "@material-ui/core/Button";
 
 const Weather = ({ weather }) => {
   const current_time = moment(new Date()).format("YYYY-MM-DDTHH:mm:ss");
-  const url = `https://api.data.gov.sg/v1/environment/24-hour-weather-forecast?date_time=${current_time}`;
-  const fetcher = (...args) => fetch(...args).then((res) => res.json());
-  const { data, error } = useSWR(url, fetcher);
+  const url = WEATHERURL + current_time;
+  //const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  const { data, error } = useSWR(url);
   if (error) return <div>Error...</div>;
   if (!data)
     return (
@@ -21,7 +23,18 @@ const Weather = ({ weather }) => {
 
   return (
     <dir>
-      <DisplayWeather data={data} />
+      <DisplayWeather data={data} url={url} />
+      <Button
+        variant="contained"
+        color="primary"
+        size="small"
+        onClick={() => {
+          // tell all SWRs with this key to revalidate
+          mutate(url);
+        }}
+      >
+        Mutate Me. Ahhhhh!!!!!!
+      </Button>
       <Food data={data} />
     </dir>
   );

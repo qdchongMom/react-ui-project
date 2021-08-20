@@ -5,7 +5,6 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 const DisplayWeather = ({ data }) => {
   const { general } = data.items[0];
-
   const renderIcon = (forecast) => {
     switch (forecast) {
       case "Thundery Showers":
@@ -43,7 +42,6 @@ const DisplayWeather = ({ data }) => {
           animate={true}
         />
         <h3 className="fontcss">Min Temp: {general.temperature.low}° C</h3>
-        <div className="element"></div>
       </Paper>
     </div>
   );

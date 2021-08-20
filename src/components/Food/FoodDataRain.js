@@ -5,6 +5,7 @@ const FoodDataRain = [
     type: "Restaurant",
     stores: "Hai Di Lao, BITP ",
     fat: "Very",
+    img: "mala.jpeg",
   },
   {
     name: "Meatball Soup",
@@ -12,6 +13,7 @@ const FoodDataRain = [
     type: "Foodcourt",
     stores: "Ah Tan",
     fat: "Moderate",
+    img: "meatball.jpeg",
   },
   {
     name: "Samyeon chicken ramen",
@@ -19,6 +21,7 @@ const FoodDataRain = [
     type: "Homecooked",
     stores: "",
     fat: "Moderate",
+    img: "fire-noodle.jpeg",
   },
   {
     name: "Bak Ku Teh",
@@ -26,6 +29,7 @@ const FoodDataRain = [
     type: "Restaurant",
     stores: "Songfa, Founders",
     fat: "Moderate",
+    img: "bkt.jpeg",
   },
   {
     name: "Homemade Soup",
@@ -33,6 +37,7 @@ const FoodDataRain = [
     type: "Homecooked",
     stores: "",
     fat: "No",
+    img: "abc-soup.jpeg",
   },
 ];
 
